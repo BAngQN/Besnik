@@ -13,6 +13,7 @@ body {
     font-style: normal;
     font-size: 1.6rem;
     font-weight: 400;
+    line-height: normal;
 }
 
 /* Common */
@@ -43,47 +44,59 @@ a {
     text-decoration: none;
 }
 
+.label {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.heading {
+    color: #0d1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
 /* Header */
 .header {
     background: #ffffff;
     padding: 52px 0 10px;
 }
 
-.header.fixed_header {
+.header.fixed--header {
     position: sticky;
     top: -42px;
     z-index: 1;
 }
 
-.header .navbar {
+.header__nav {
     display: flex;
     align-items: center;
 }
 
-.header .logo {
+.header__logo {
     width: 127px;
     height: 37px;
     object-fit: cover;
 }
 
-.header .nav-links {
+.nav__list {
     display: flex;
     gap: 39px;
     margin-left: auto;
     margin-right: 153px;
 }
 
-.navbar .link {
+.nav__link {
     color: #2f3a3b;
     font-size: 1.6rem;
 }
 
-.navbar .link:hover,
-.navbar .active .link {
+.nav__link:hover,
+.nav__item--active .nav__link {
     text-shadow: 1px 0 #2f3a3b;
 }
 
-.header .cta_group {
+.header__cta-group {
     display: flex;
 }
 
@@ -93,7 +106,7 @@ a {
     background: #ffffff;
 }
 
-.header .btn_sign_in {
+.btn--sign-in {
     color: #494949;
     text-align: center;
     padding: 0 24px;
@@ -102,7 +115,7 @@ a {
     font-weight: 400;
 }
 
-.header .btn_sign_up {
+.btn--sign-up {
     min-width: 108px;
     border: 1px solid #1ebfc1;
     color: #1ebfc1;
@@ -116,32 +129,29 @@ a {
     padding-bottom: 79px;
 }
 
-.hero .content {
+.hero__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.hero .info {
+.hero__info {
     flex-basis: 41%;
     display: flex;
     flex-direction: column;
 }
 
-.hero .slogan {
-    color: #767e7e;
+.hero__label {
     font-size: 1.4rem;
 }
 
 .hero .heading {
     margin-top: 18px;
-    color: #0d1111;
     font-size: 6.2rem;
-    font-weight: 700;
     line-height: 7.2rem; /* 116.129% */
 }
 
-.hero .desc {
+.hero__desc {
     width: 374px;
     margin-top: 46px;
     color: #9da6a5;
@@ -149,22 +159,22 @@ a {
     line-height: 3.2rem; /* 177.778% */
 }
 
-.hero .desc span {
+.hero__desc span {
     white-space: nowrap;
 }
 
-.hero .cta-group {
+.hero__cta-group {
     display: flex;
     align-items: center;
     margin-top: 52px;
     gap: 50px;
 }
 
-.hero .btn_get_started {
+.hero .btn--get-started {
     min-width: 186px;
 }
 
-.hero .watch_video {
+.hero__watch-video {
     width: 62px;
     height: 62px;
     border-radius: 50%;
@@ -176,19 +186,19 @@ a {
     cursor: pointer;
 }
 
-.hero .media-block {
+.hero__media {
     flex-basis: 49%;
     position: relative;
     display: flex;
 }
 
-.hero .thumb {
+.hero__thumb {
     width: 100%;
     height: 631px;
     object-fit: cover;
 }
 
-.course_quantity {
+.hero__course-quantity {
     display: flex;
     align-items: center;
     position: absolute;
@@ -200,14 +210,14 @@ a {
     left: -40px;
 }
 
-.course_quantity .icon {
+.hero__course-icon {
     width: 36px;
     height: 40px;
     position: relative;
     margin-right: 16px;
 }
 
-.icon .line {
+.hero__course-quantity .hero__line {
     position: absolute;
     width: calc(100% - 8px);
     height: 3px;
@@ -219,17 +229,14 @@ a {
     box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
 }
 
-.course_quantity .quantity {
+.hero__quantity {
     width: 55px;
     color: #0d1111;
-    font-family: Poppins;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
 }
 
-.hero .schedule {
+.hero__schedule {
     padding: 16px 25px 23px;
     border-radius: 24px;
     background: #fff;
@@ -240,23 +247,23 @@ a {
     transform: translateX(-50%);
 }
 
-.schedule .title {
+.hero__schedule-title {
     color: #0d1111;
     font-size: 1rem;
     font-weight: 500;
 }
 
-.schedule .icon_group {
+.hero__icons {
     display: flex;
     flex-direction: column;
 }
 
-.schedule .icon {
+.hero__schedule .hero__icon {
     height: 6px;
     margin-top: 16px;
 }
 
-.hero .student_active {
+.hero__students {
     padding: 17px 35px;
     border-radius: 24px;
     background: #fefefd;
@@ -265,41 +272,85 @@ a {
     right: 45px;
 }
 
-.student_active .title {
+.hero__students-title {
     color: #0d1111;
     font-size: 1rem;
     font-weight: 500;
 }
 
-.student_active .avatar_list {
+.hero__avatars {
     display: flex;
     margin-top: 8px;
 }
 
-.student_active .avatar {
+.hero__avatar {
     width: 33px;
     height: 33px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.student_active .avatar + .avatar {
+.hero__avatar + .hero__avatar {
     margin-left: -7px;
 }
 
-.student_active .default-avatar {
+.hero__avatar-default {
     background-color: #1ebfc1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.student_active .students_quantity {
+.hero__students-count {
     color: #fff;
     text-align: center;
-    font-family: Poppins;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
+}
+
+/* Features */
+.features {
+    margin: 130px 0;
+}
+
+.features__content {
+    width: 1024px;
+}
+
+.features .heading {
+    width: 577px;
+    margin: 18px 0;
+}
+
+.features__desc {
+    width: 590px;
+    color: #767e7e;
+    font-size: 1.8rem;
+}
+
+.features__list {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features__card__icon {
+    width: 102px;
+    height: 106px;
+}
+
+.feature__card__title {
+    margin-top: 26px;
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.feature__card__desc {
+    width: 224px;
+    margin-top: 16px;
+    color: #9da6a5;
+    font-size: 1.6rem;
+    line-height: 2.7rem; /* 168.75% */
 }

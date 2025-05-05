@@ -17,36 +17,36 @@
     </head>
     <body style="height: 10000px">
         <!-- Header -->
-        <header class="header fixed_header">
+        <header class="header fixed--header">
             <div class="main_content">
-                <nav class="navbar">
+                <nav class="header__nav">
                     <a href="#!">
                         <img
                             src="./assets/icon/logo.png"
                             alt="Besnik"
-                            class="logo"
+                            class="header__logo"
                         />
                     </a>
-                    <ul class="nav-links">
-                        <li class="item active">
-                            <a href="/" class="link">Home</a>
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item--active">
+                            <a href="/" class="nav__link">Home</a>
                         </li>
-                        <li class="item">
-                            <a href="#!" class="link">Features</a>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Features</a>
                         </li>
-                        <li class="item">
-                            <a href="#!" class="link">Pricing</a>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Pricing</a>
                         </li>
-                        <li class="item">
-                            <a href="#!" class="link">About</a>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">About</a>
                         </li>
-                        <li class="item">
-                            <a href="#!" class="link">Contact</a>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Contact</a>
                         </li>
                     </ul>
-                    <div class="cta_group">
-                        <a href="#!" class="btn btn_sign_in">Sign in</a>
-                        <button class="btn btn_sign_up">Sign up</button>
+                    <div class="header__cta-group">
+                        <a href="#!" class="btn btn--sign-in">Sign in</a>
+                        <button class="btn btn--sign-up">Sign up</button>
                     </div>
                 </nav>
             </div>
@@ -55,36 +55,38 @@
             <!-- Hero -->
             <div class="hero">
                 <div class="main_content">
-                    <div class="content">
-                        <div class="info">
-                            <p class="slogan">😎 EASY LEAENING PLATFORM</p>
+                    <div class="hero__content">
+                        <div class="hero__info">
+                            <span class="hero__label"
+                                >😎 EASY LEAENING PLATFORM</span
+                            >
                             <h1 class="heading">Words learner come here.</h1>
-                            <p class="desc">
+                            <p class="hero__desc">
                                 Build skills with courses, certificates, and get
                                 online knowledge from our
                                 <span>world-class</span> platform.
                             </p>
-                            <div class="cta-group">
-                                <button class="btn btn_get_started">
+                            <div class="hero__cta-group">
+                                <button class="btn btn--get-started">
                                     Get Started
                                 </button>
-                                <div class="watch_video">
+                                <div class="hero__watch-video">
                                     <img
                                         src="./assets/icon/icon_play.svg"
                                         alt=""
-                                        class="icon"
+                                        class="hero__icon"
                                     />
                                 </div>
                             </div>
                         </div>
-                        <div class="media-block">
+                        <div class="hero__media">
                             <img
                                 src="./assets/img/thumb.jpg"
                                 alt="Words learner come here"
-                                class="thumb"
+                                class="hero__thumb"
                             />
-                            <div class="course_quantity">
-                                <div class="icon">
+                            <div class="hero__course-quantity">
+                                <div class="hero__course-icon">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="36"
@@ -96,65 +98,132 @@
                                             fill="#FF8282"
                                         />
                                     </svg>
-                                    <div class="line"></div>
+                                    <div class="hero__line"></div>
                                 </div>
-                                <p class="quantity">Courses 1000+</p>
+                                <p class="hero__quantity">Courses 1000+</p>
                             </div>
-                            <div class="schedule">
-                                <p class="title">Schedules</p>
-                                <div class="icon_group">
+                            <div class="hero__schedule">
+                                <p class="hero__schedule-title">Schedules</p>
+                                <div class="hero__icons">
                                     <img
                                         src="./assets/img/schedule_first_progress.svg"
                                         alt=""
-                                        class="icon"
+                                        class="hero__icon"
                                     />
                                     <img
                                         src="./assets/img/schedule_second_progress.svg"
                                         alt=""
-                                        class="icon"
+                                        class="hero__icon"
                                     />
                                     <img
                                         src="./assets/img/schedule_third_progress.svg"
                                         alt=""
-                                        class="icon"
+                                        class="hero__icon"
                                     />
                                     <img
                                         src="./assets/img/schedule_last_progress.svg"
                                         alt=""
-                                        class="icon"
+                                        class="hero__icon"
                                     />
                                 </div>
                             </div>
-                            <div class="student_active">
-                                <p class="title">Our Active Students</p>
-                                <div class="avatar_list">
+                            <div class="hero__students">
+                                <p class="hero__students-title">
+                                    Our Active Students
+                                </p>
+                                <div class="hero__avatars">
                                     <img
                                         src="./assets/img/avatar-1.jpg"
                                         alt=""
-                                        class="avatar"
+                                        class="hero__avatar"
                                     />
                                     <img
                                         src="./assets/img/avatar-2.jpg"
                                         alt=""
-                                        class="avatar"
+                                        class="hero__avatar"
                                     />
                                     <img
                                         src="./assets/img/avatar-3.jpg"
                                         alt=""
-                                        class="avatar"
+                                        class="hero__avatar"
                                     />
                                     <img
                                         src="./assets/img/avatar-4.webp"
                                         alt=""
-                                        class="avatar"
+                                        class="hero__avatar"
                                     />
-                                    <div class="avatar default-avatar">
-                                        <span class="students_quantity"
+                                    <div
+                                        class="hero__avatar hero__avatar-default"
+                                    >
+                                        <span class="hero__students-count"
                                             >10K+</span
                                         >
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature -->
+            <div class="features">
+                <div class="main_content">
+                    <div class="features__content">
+                        <span class="label">F E A T U R E S</span>
+                        <h2 class="heading">
+                            We are providing suitable features for students.
+                        </h2>
+                        <p class="features__desc">
+                            Read our awesome feature that is absolutely suit for
+                            you. Explore the feature and know the best.
+                        </p>
+                        <div class="features__list">
+                            <a href="#!" class="feature__link">
+                                <div class="features__card">
+                                    <img
+                                        src="./assets/icon/icon_liveclass.svg"
+                                        alt="Live Class"
+                                        class="features__card__icon"
+                                    />
+                                    <h3 class="feature__card__title">
+                                        Live Class
+                                    </h3>
+                                    <p class="feature__card__desc">
+                                        We are providing live classes with the
+                                        best teacher for you
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="#!" class="features__link">
+                                <div class="features__card">
+                                    <img
+                                        src="./assets/icon/icon_dissuss.svg"
+                                        alt="Discuss"
+                                        class="features__card__icon"
+                                    />
+                                    <h3 class="feature__card__title">
+                                        Discuss
+                                    </h3>
+                                    <p class="feature__card__desc">
+                                        Conversation with teachers or another
+                                        students about task or any other thing
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="#!" class="features__link">
+                                <div class="features__card">
+                                    <img
+                                        src="./assets/icon/icon_task.svg"
+                                        alt="Task"
+                                        class="features__card__icon"
+                                    />
+                                    <h3 class="feature__card__title">Task</h3>
+                                    <p class="feature__card__desc">
+                                        We give every of our students task for
+                                        gathering knowledge at home
+                                    </p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
