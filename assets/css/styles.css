@@ -56,6 +56,11 @@ a {
     font-weight: 700;
 }
 
+.row {
+    display: flex;
+    align-items: center;
+}
+
 /* Header */
 .header {
     background: #ffffff;
@@ -353,4 +358,110 @@ a {
     color: #9da6a5;
     font-size: 1.6rem;
     line-height: 2.7rem; /* 168.75% */
+}
+
+/* Courses */
+.courses .heading {
+    margin-top: 18px;
+}
+
+.courses__row--desc {
+    margin-top: 19px;
+    justify-content: space-between;
+}
+
+.courses__desc {
+    width: 525px;
+    color: #767e7e;
+    font-size: 18px;
+    line-height: 32px; /* 177.778% */
+}
+
+.courses__view-all {
+    color: #1ebfc1;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.courses__list {
+    margin-top: 79px;
+    display: flex;
+    column-gap: 47px;
+}
+
+.courses__link {
+    flex-basis: calc(100% / 3);
+}
+
+.courses__card {
+    position: relative;
+}
+
+.courses__card:hover .courses__image {
+    opacity: 0.35;
+}
+
+.courses__image {
+    width: 100%;
+    height: 393px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #d0efed;
+}
+
+.courses__info {
+    width: 325px;
+    padding: 18px 25px 29px;
+    position: absolute;
+    border-radius: 8px;
+    background: #fff;
+    top: 322px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.courses__name {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.courses__fee {
+    margin-top: 16px;
+    color: #767e7e;
+    font-size: 1.6rem;
+}
+
+.courses__fee--highlight {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.courses__card-desc {
+    margin-top: 6px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+}
+
+.courses__info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.courses__row--info-meta {
+    margin-top: 18px;
+    gap: 10px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+}
+
+.courses__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #1ebfc1;
 }
