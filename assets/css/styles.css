@@ -490,3 +490,63 @@ a {
     text-align: center;
     font-size: 1.8rem;
 }
+
+/* Feedbacks */
+.feedback {
+    margin: 264px 0 130px;
+}
+
+.feedback__body {
+    display: flex;
+    align-items: center;
+    height: 481px;
+}
+
+.feedback__info {
+    flex-basis: 36%;
+}
+
+.feedback__img-quotes {
+    width: 36px;
+    height: 29px;
+}
+
+.feedback__quote {
+    margin-top: 27px;
+    color: #5d6564;
+    font-size: 3.2rem;
+    line-height: 4.8rem; /* 150% */
+}
+
+.feedback__author {
+    display: inline-block;
+    position: relative;
+    margin-top: 33px;
+    color: #767e7e;
+    font-size: 1.6rem;
+    padding-left: 13px;
+}
+
+.feedback__author::before {
+    width: 8px;
+    height: 2px;
+    content: "";
+    display: inline-block;
+    background: #070707;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.feedback__author--highlight {
+    color: #070707;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.feedback__avatars {
+    height: 100%;
+    flex-basis: 64%;
+    display: inline-block;
+    object-fit: contain;
+}
