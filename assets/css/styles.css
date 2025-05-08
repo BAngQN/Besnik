@@ -465,3 +465,28 @@ a {
     border-radius: 50%;
     background-color: #1ebfc1;
 }
+
+/* Statistical */
+.statistical {
+    margin-top: 389px;
+}
+
+.statistical__body {
+    display: flex;
+    justify-content: center;
+    gap: 202px;
+}
+
+.statistical__data {
+    width: 100%;
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+}
+
+.statistical__label {
+    margin-top: 11px;
+    color: #767e7e;
+    text-align: center;
+    font-size: 1.8rem;
+}
