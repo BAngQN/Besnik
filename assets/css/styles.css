@@ -570,3 +570,31 @@ a {
 .feedback__nav-icon {
     color: #ffffff;
 }
+
+/* Explore */
+.explore {
+    background: #def6f5;
+}
+
+.explore__body {
+    padding: 76px 0 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.explore__title {
+    color: #070707;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.explore__desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    margin-top: 18px;
+}
+
+.explore__btn--get-started {
+    padding: 20px 41px;
+}
