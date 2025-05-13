@@ -538,7 +538,7 @@ a {
     top: 50%;
 }
 
-.feedback__author--highlight {
+.feedback__author-name--highlight {
     color: #070707;
     font-size: 1.6rem;
     font-weight: 500;
@@ -549,4 +549,24 @@ a {
     flex-basis: 64%;
     display: inline-block;
     object-fit: contain;
+}
+
+.feedback__cta-group {
+    margin-top: 52px;
+    display: flex;
+    gap: 30px;
+}
+
+.feedback__nav-button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2ac9bf;
+    border-radius: 50%;
+}
+
+.feedback__nav-icon {
+    color: #ffffff;
 }
