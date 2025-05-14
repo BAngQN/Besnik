@@ -61,6 +61,12 @@ a {
     align-items: center;
 }
 
+.logo {
+    width: 127px;
+    height: 37px;
+    object-fit: cover;
+}
+
 /* Header */
 .header {
     background: #ffffff;
@@ -76,12 +82,6 @@ a {
 .header__nav {
     display: flex;
     align-items: center;
-}
-
-.header__logo {
-    width: 127px;
-    height: 37px;
-    object-fit: cover;
 }
 
 .nav__list {
@@ -316,6 +316,7 @@ a {
 /* Features */
 .features {
     margin: 130px 0;
+    scroll-margin: 130px;
 }
 
 .features__content {
@@ -361,6 +362,11 @@ a {
 }
 
 /* Courses */
+
+.courses {
+    scroll-margin: 130px;
+}
+
 .courses .heading {
     margin-top: 18px;
 }
@@ -597,4 +603,51 @@ a {
 
 .explore__btn--get-started {
     padding: 20px 41px;
+    margin-right: 154px;
+}
+
+/* Footer */
+
+.footer__body {
+    padding: 130px 0 50px;
+}
+
+.footer--row {
+    align-items: start;
+    justify-content: space-between;
+}
+
+.footer__title {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.footer__item-link {
+    display: inline-block;
+    color: #535353;
+    font-size: 1.6rem;
+}
+
+.footer__item {
+    margin-top: 18px;
+}
+
+.footer__item--social {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.footer__logo--social {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__copy-right {
+    margin-top: 80px;
+    color: #b0b5b4;
+    text-align: center;
+    font-size: 1.8rem;
 }
